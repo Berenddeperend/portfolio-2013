@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+	    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Berend Swennenhuis - Over Mij</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+  		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700'  rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+				<a href="index.html"><img id="logo" src="img/logo.png" alt="logo Berend Swennenhuis"></a>
+				
+                <nav>
+		             <ul>
+			             <li><a href="index.html">Home</a></li>
+		                 <li><a href="portfolio.html">Portfolio</a></li>
+		                 <li><a class="current" href="overmij.html">Over mij</a></li>
+		               	<li><a href="contact.html">Contact</a></li>
+		             </ul>
+					<a href="#" id="pull">Menu</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                   	<h1>Gegroet, bezoeker!</h1>
+					<p>Mijn naam is Berend Swennenhuis, een tweeëntwintig jarige grafisch vormgever. Dit jaar heb ik mijn HBO-diploma 'Kunst en Techniek' gehaald aan het Saxion college te Enschede, de stad waar ik momenteel ook woon.</p>
+					<p>Na mijn studie ben ik als Designer / Front-end developer aan het werk gegaan bij El Niño ICT in Enschede. Ik heb ook een grote interesse in zaken als branding, front-end developing en SEO. Daarom heb ik de ambitie om later in mijn carrière door te groeien tot creative director in een reclamebureau zodat ik kan meedenken en beslissingen maken over uiteenlopende onderwerpen.</p> 
+					<p>Ik omschrijf mezelf als geduldig en leergierig. Wat mij kenmerkt is dat ik graag op de hoogte blijft van alle ontwikkelingen en best-practices in mijn vakgebieden. Daarom is deze website bijvoorbeeld volledig <a href="http://nl.wikipedia.org/wiki/Responsive_webdesign" target="_blank">responsive</a> (maak je browservenster maar eens kleiner), en gebouwd op de fundering van het <a href="http://en.wikipedia.org/wiki/Twitter_Bootstrap" target="_blank">Twitter Bootstrap</a> framework.
+						
+
+					<p>Deze website heb ik gebouwd om me aan een baan te helpen, en dat is gelukt. Ik heb geen tijd meer om nieuwe projecten aan te nemen. Deze mooie groene knop hieronder kun je dus alleen nog maar gebruiken om me uit te nodigen voor een biertje ;)</p>			
+					
+					<div class="knop"><a href="mailto:berendswennenhuis@gmail.com">E-mail Berend</a></div>
+					
+				</article>
+
+				
+					<aside>
+						<div id="sidebarprofielfoto"><img src="img/profielfoto.jpg"></div>
+						<h3>Berend Swennenhuis</h3>
+						<p>Grafisch vormgever </br>Illustrator</br>Webdesigner</p>
+						<p>berendswennenhuis@gmail.com</br>0655336216</p>
+
+					</aside>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+ 
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-44440858-1', 'berendswennenhuis.nl');
+		  ga('send', 'pageview');
+
+		</script>
+    </body>
+</html>

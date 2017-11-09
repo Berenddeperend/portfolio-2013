@@ -1,0 +1,35 @@
+body {
+	font-family : helvetica;
+        background: url("bg/bg.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	}
+
+#countDown {
+	font-size: 150px;
+	}
+	
+	
+#typografie {
+	position:			absolute;
+	background-image:url("bg/text.png");
+	height: 300px;
+	width: 800px;
+	top:				50%;
+	left:				50%;
+	margin-left:		-400px;
+	margin-top:			-150px;
+	}
+	
+
+#getal {
+	font-family:	 	'Menlo';
+	src: 				url(fonts/Menlo.ttc);
+	position:	absolute;
+	top:	50%;
+	left: 	50%;
+	margin-left: -340px;
+	margin-top: -75px;
+}

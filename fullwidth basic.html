@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Initializr home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+  		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700'  rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+				<img id="logo" src="img/logo.png" alt="logo Berend Swennenhuis">
+				
+                <nav class="clearfix">
+		             <ul class="clearfix">
+			             <li><a href="index.html">Home</a></li>
+		                 <li><a href="portfolio.html">Portfolio</a></li>
+		                 <li><a href="overmij.html">Over mij</a></li>
+		               	<li><a href="#">Contact</a></li>
+		             </ul>
+					<a href="#" id="pull">Menu</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="fullwidth wrapper clearfix">
+                <article>
+							<p>
+						This tutorial page features all the typography available with the template, showcasing them in HTML form. If you wish to use the RokCandy format, which is WYSIWYG friendly, please go to <a href="/free/quasar/typography/rokcandy-examples">the RokCandy Typography page</a>.
+						<br /><br />
+						This page shows all of the typography styles and settings in action. If you would like to read more detailed information on inserting the included typography into your content, check out the <a href="/free/quasar/component/content/63">Typography Tutorial.</a>
+					</p>
+
+					<div class="component-header"><h2 class="componentheading">This is a ComponentHeading</h2></div>
+
+					<p>Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed euismod magna a nibh.</p>
+
+					<div class="contentheading">This is a Contentheading</div>
+
+					<p>Proin ac nunc eu nunc condimentum accumsan. Phasellus odio justo, euismod vitae, egestas a, porttitor in, urna. Maecenas vitae mauris. Donec vestibulum, nunc eu varius pharetra, massa est sagittis odio, sit amet eleifend elit dolor id tortor. </p>
+
+					<h1>This is a H1 Header</h1>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin sit amet odio quis sapien molestie ultrices. Vivamus quis lectus. Praesent eu mi. Curabitur pharetra leo sed nisl. Nunc vel nisi. Aliquam nulla. Etiam at est. Pellentesque arcu diam, tempus nec, sodales eu, ullamcorper quis, risus. </p>
+
+					<h2>This is a H2 Header</h2>
+
+					<p>Proin ac nunc eu nunc condimentum accumsan. Phasellus odio justo, euismod vitae, egestas a, porttitor in, urna. Maecenas vitae mauris. Donec vestibulum, nunc eu varius pharetra, massa est sagittis odio, sit amet eleifend elit dolor id tortor. </p>
+
+					<h3>This is a H3 Header</h3>
+
+					<p>Mauris euismod. In ac massa vitae quam tincidunt dapibus. Ut at tortor nec mi mattis blandit. Maecenas venenatis lorem at nulla. Phasellus a libero. Sed odio odio, eleifend dignissim, feugiat vel, tempor nec, ligula. Suspendisse lacinia convallis nulla.</p>
+
+					<h4>This is a H4 Header</h4>
+
+					<p>Vestibulum posuere, lacus aliquet pulvinar faucibus, tortor urna luctus diam, vitae ultrices ante magna non tellus. Donec nunc magna, posuere eget, aliquam in, vulputate in, lacus. Sed venenatis. Donec nec dolor vitae mauris dapibus ullamcorper. Etiam iaculis mollis tortor. </p>
+
+					<h5>This is a H5 Header</h5>
+
+					<p>Pellentesque vel enim urna, sit amet blandit ipsum. Maecenas quis sem sit amet nunc pretium mattis. Sed dapibus semper est, sed pretium erat sodales sed. Aenean hendrerit fringilla sem, et tincidunt libero ornare at. Sed venenatis pretium mauris sed vehicula. </p>
+
+					<h3><a name="blockquotes" href="#blockquotes">Blockquote Example</a></h3>
+
+					<blockquote><p><strong>This is a blockquote, you will want to use the following formatting: &lt;blockquote&gt;&lt;p&gt;....&lt;/p&gt;&lt;/blockquote&gt;</strong>. Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed euismod magna a nibh.</p></blockquote>
+
+					<h3><a name="dropcap" href="#dropcap">DropCap Styles</a></h3>
+
+					<p class="dropcap"><span class="dropcap">P</span>Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed euismod magna a nibh.<br /><br />You will need to use the following formatting: <strong>&lt;p class=&quot;dropcap&quot;&gt;&lt;span class=&quot;<em style="font-weight: normal !important;">dropcap</em>&quot;&gt;<em style="font-weight: normal !important;">P</em>&lt;/span&gt;&lt;/p&gt;</strong></p>
+
+					<p><strong>Number Examples</strong></p>
+					<p class="dropcap"><span class="dropcap">1</span>You will need to use the following formatting: <strong>&lt;p class=&quot;dropcap&quot;&gt;&lt;span class=&quot;<em style="font-weight: normal !important;">dropcap</em>&quot;&gt;<em style="font-weight: normal !important;">1</em>&lt;/span&gt;&lt;/p&gt;</strong></p>
+					<p class="dropcap"><span class="dropcap">2</span>You will need to use the following formatting: <strong>&lt;p class=&quot;dropcap&quot;&gt;&lt;span class=&quot;<em style="font-weight: normal !important;">dropcap</em>&quot;&gt;<em style="font-weight: normal !important;">2</em>&lt;/span&gt;&lt;/p&gt;</strong></p>
+					<p class="dropcap"><span class="dropcap">3</span>You will need to use the following formatting: <strong>&lt;p class=&quot;dropcap&quot;&gt;&lt;span class=&quot;<em style="font-weight: normal !important;">dropcap</em>&quot;&gt;<em style="font-weight: normal !important;">3</em>&lt;/span&gt;&lt;/p&gt;</strong></p>
+
+					<h3><a name="bullets" href="#bullets">List Styles - Bullets</a></h3>
+					<p>Below is a list with <em style="font-weight: normal !important;">bullets</em>.  To use this style create a list in the following format: <strong>&lt;ul class="</strong><em style="font-weight: normal !important;">class name</em><strong>"&gt;&lt;li&gt;....&lt;/li&gt;&lt;li&gt;....&lt;/li&gt;...&lt;/ul&gt;</strong></p>
+
+					<ul class="bullet-1">
+					  <li>To use this style create a list in the following format: <strong>&lt;ul class="</strong><em style="font-weight: normal !important;">bullet-1</em><strong>"&gt;&lt;li&gt;....&lt;/li&gt;&lt;li&gt;....&lt;/li&gt;...&lt;/ul&gt;</strong>.</li>
+					</ul>
+					<ul class="bullet-2">
+					  <li>To use this style create a list in the following format: <strong>&lt;ul class="</strong><em style="font-weight: normal !important;">bullet-2</em><strong>"&gt;&lt;li&gt;....&lt;/li&gt;&lt;li&gt;....&lt;/li&gt;...&lt;/ul&gt;</strong>.</li>
+					</ul>
+					<ul class="bullet-3">
+					  <li>To use this style create a list in the following format: <strong>&lt;ul class="</strong><em style="font-weight: normal !important;">bullet-3</em><strong>"&gt;&lt;li&gt;....&lt;/li&gt;&lt;li&gt;....&lt;/li&gt;...&lt;/ul&gt;</strong>.</li>
+					</ul>
+					<ul class="bullet-4">
+					  <li>To use this style create a list in the following format: <strong>&lt;ul class="</strong><em style="font-weight: normal !important;">bullet-4</em><strong>"&gt;&lt;li&gt;....&lt;/li&gt;&lt;li&gt;....&lt;/li&gt;...&lt;/ul&gt;</strong>.</li>
+					</ul>
+
+					<h3><a name="emphasis" href="#emphasis">Emphasis Styles</a></h3>
+
+					This is a emphasis tag that allows you to <em class="color">highlight words or phrases</em>. Use the following format: <strong>&lt;em class=&quot;<em style="font-weight: normal !important;">color</em>&quot;&gt;...&lt;/em&gt;</strong><br /><br />
+
+					This is a emphasis tag that allows you to <em class="bold">highlight words or phrases</em>. Use the following format: <strong>&lt;em class=&quot;<em style="font-weight: normal !important;">bold</em>&quot;&gt;...&lt;/em&gt;</strong><br /><br />
+
+
+					<h3><a name="insets" href="#insets">Inset Styles</a></h3>
+
+					<p>Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="inset-right"><span class="inset-right-title">Inset Right Title</span>You will need to use the following formatting: <strong>&lt;span class=&quot;inset-right&quot;&gt;&lt;span class=&quot;inset-right-title&quot;&gt;....&lt;/span&gt;<em style="font-weight: normal !important;">...some content...</em>&lt;/strong&gt;</strong></span>Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed euismod magna a nibh.</p>
+
+					<p>Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="inset-left"><span class="inset-left-title">Inset Left Title</span>You will need to use the following formatting: <strong>&lt;span class=&quot;inset-left&quot;&gt;&lt;span class=&quot;inset-left-title&quot;&gt;....&lt;/span&gt;<em style="font-weight: normal !important;">...some content...</em>&lt;/span&gt;</strong></span>Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed euismod magna a nibh.</p><p>Sed euismod magna a nibh. Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent rutrum sapien ac felis. Phasellus elementum dolor quis turpis. Vestibulum nec mi vitae pede tincidunt nonummy. Vestibulum facilisis mollis neque. Sed orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><br />
+
+					<h3><a name="important" href="#important">Important Emphasis Styles</a></h3>
+
+					<div class="important"><span class="important-title">Sample Title</span>
+					<span>This is a span that lets you place all of the content into a nice well formed section. You will need to use the following formatting: <strong>&lt;div class=&quot;<em style="font-weight: normal !important;">important</em>&quot;&gt;&lt;span class=&quot;<em style="font-weight: normal !important;">important-title</em>&quot;&gt;<em style="font-weight: normal !important;">Sample Title</em>&lt;/span&gt;<em style="font-weight: normal !important;">...some content...</em>&lt;/div&gt;</strong></span></div><br />
+
+					<h3><a name="notice" href="#notice">Notice Styles</a></h3>
+
+					<div class="attention"><div class="typo-icon">This is a sample of the 'attention' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="attention"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="notice"><div class="typo-icon">This is a sample of the 'notice' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="notice"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="alert"><div class="typo-icon">This is a sample of the 'alert' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="alert"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="download"><div class="typo-icon">This is a sample of the 'download' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="download"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="approved"><div class="typo-icon">This is a sample of the 'approved' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="approved"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="media"><div class="typo-icon">This is a sample of the 'media' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="media"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="note"><div class="typo-icon">This is a sample of the 'note' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="note"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="cart"><div class="typo-icon">This is a sample of the 'cart' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="cart"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="camera"><div class="typo-icon">This is a sample of the 'camera' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="camera"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<div class="doc"><div class="typo-icon">This is a sample of the 'doc' style.  Use this style to denote very important information to your users. To use this use the following html: <strong>&lt;div class="doc"&gt;&lt;div class=&quot;typo-icon&quot;&gt;....&lt;/div&gt;&lt;/div&gt;</strong></div></div>
+
+					<h3><a name="pre-example" href="#pre-example">Pre Example</a></h3>
+
+					
+                </article>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

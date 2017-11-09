@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Portfolio - De Staat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+  		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700'  rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+				<a href="index.html"><img id="logo" src="img/logo.png" alt="logo Berend Swennenhuis"></a>
+				
+                <nav class="clearfix">
+		             <ul class="clearfix">
+			             <li><a href="index.html">Home</a></li>
+		                 <li><a class="current" href="portfolio.html">Portfolio</a></li>
+		                 <li><a href="overmij.html">Over mij</a></li>
+		               	<li><a href="contact.html">Contact</a></li>
+		             </ul>
+					<a href="#" id="pull">Menu</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <article>
+					<h1>De Staat</h1>
+					<h3>Opdrachtgever: Atak</br>
+						Taak: Poster ontwerp</h3>
+					<p>Sinds begin 2013 ben ik vrijwilliger bij Atak, het poppodium in Enschede. Ik begon er in de horeca en inmiddels ben ik ook onderdeel van het team van vormgevers. De eerste opdracht die ik hiervoor kreeg was meteen een speciale voor mij, ik werd namelijk gevraagd om een poster voor De Staat te maken. Aangezien dit een van mijn favoriete bands is kon ik niet wachten om eraan te beginnen.</p>
+					<p>Tijdens de ontwikkeling van de poster was de grafische stijl en de sound van het nieuwe album van De Staat nog niet bekend. Ik heb dus zelf een visualisatie gemaakt van hoe de muziek van de eerste twee albums op mij overkomt. Structureel, ritmisch, veel textuur, lekker rauw maar niet over the top. De poster zal in de weken voorafgaand aan het concert in Enschede versprijd worden dus hou je ogen open!</p>
+					</p>
+					<img src="img/destaat fullsize.jpg" alt="Poster De Staat">
+					<i>In het achtergrondpatroon heb ik op een subtiele manier recente foto's van de bandleden verwerkt.</i>					
+                </article>
+
+						<aside>
+							<h2>Meer uit mijn portfolio</h2>
+							<ul>
+				             	<li><a href="techwise.html">TechWise Twente</a></li>
+				             	<li><a href="hellehondsdagen.html">Hellehondsdagen</a></li>
+				             	<li><a href="amicover.html">amiCover.</a></li>
+				             	<li><a href="hellehondsdagen.html">Hellehondsdagen</a></li>
+
+							</ul>
+
+						</aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

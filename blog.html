@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+	    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Berend Swennenhuis - Blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+  		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700'  rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+				<a href="index.html"><img id="logo" src="img/logo.png" alt="logo Berend Swennenhuis"></a>
+				
+                <nav>
+		             <ul>
+			             <li><a href="index.html">Home</a></li>
+		                 <li><a href="portfolio.html">Portfolio</a></li>
+		                 <li><a href="overmij.html">Over mij</a></li>
+		               	<li><a href="#">Contact</a></li>
+		             </ul>
+					<a href="#" id="pull">Menu</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                   	<h1>Blog</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis leo accumsan, feugiat elit in, volutpat lacus. Donec vestibulum sagittis neque, sed facilisis elit imperdiet ut. Nunc ut tellus libero. Praesent laoreet sem ornare justo bibendum ultricies. Aliquam lectus ipsum, molestie eu gravida in, pharetra vitae erat. Maecenas vulputate erat lacinia nulla vehicula cursus. Sed aliquam orci condimentum interdum varius. Ut at lacinia urna. Vivamus pretium augue a tellus posuere, sed hendrerit sem imperdiet. Suspendisse vitae scelerisque velit, ac ornare tellus. Nullam eu convallis nulla, quis adipiscing risus.</p>
+					
+					<p>Sed blandit orci ut enim eleifend viverra. Phasellus non auctor ipsum. Nunc quis lacus posuere, suscipit elit sed, convallis lorem. Integer facilisis et mauris nec volutpat. Maecenas justo turpis, molestie vel mi vitae, venenatis semper enim. Mauris ut velit risus. Proin rhoncus ornare tincidunt. Praesent quis augue sit amet odio posuere ornare. Phasellus hendrerit odio odio, eget porttitor ante sollicitudin vitae. Fusce non mauris magna. Cras tortor velit, eleifend vitae mauris a, sodales fermentum odio. Suspendisse ultricies, tortor eu varius fringilla, orci magna consectetur sem, quis posuere urna eros vitae ipsum.</p>
+
+					  <img src="http://placehold.it/500x300">
+					
+
+					<p>Phasellus nibh mi, eleifend sodales erat eu, fringilla tincidunt ipsum. Nam eget enim et nisi condimentum adipiscing. Donec blandit iaculis tincidunt. Suspendisse in mauris sodales, cursus elit ut, interdum tortor. Vivamus in nibh luctus, iaculis turpis ac, vestibulum sem. Nam suscipit urna ac dui laoreet consectetur. Aliquam turpis odio, placerat non massa nec, congue varius tortor. Aenean blandit lorem a pellentesque semper. Suspendisse imperdiet leo varius euismod feugiat. Proin blandit, neque et vehicula condimentum, libero ante rutrum leo, a pharetra felis augue non libero.</p>
+
+					<p>Suspendisse suscipit mauris vel nunc fringilla, a scelerisque lectus scelerisque. Praesent quis tellus cursus, laoreet dolor eget, mollis nisl. Etiam id quam libero. Praesent ultrices dapibus tellus, ac hendrerit sem ultricies in. Sed sed tortor est. Nunc sem ante, tincidunt at fermentum et, accumsan dapibus mauris. Ut vitae commodo enim. Nam vehicula arcu felis, eget consectetur sem gravida eget. In sed mollis erat. Quisque lobortis, nisl et cursus blandit, sem enim viverra metus, et vestibulum tellus mauris sit amet lectus. Pellentesque ultrices, lacus vitae viverra elementum, velit lectus fringilla turpis, vitae volutpat tellus massa quis felis. Morbi ut nisl tortor.</p>
+
+					<p>Duis at diam ut dui condimentum feugiat. Ut accumsan turpis eu sodales dignissim. Nam ultricies diam sed orci porta, sit amet pulvinar lectus elementum. Donec eu leo sed tellus imperdiet volutpat iaculis ac augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum at elit consectetur, ultrices erat at, egestas lacus. Duis tincidunt diam congue libero varius, id ullamcorper risus sagittis. Etiam rhoncus orci in tortor convallis, ut accumsan nisi ullamcorper. Ut tempus dui dolor, vitae molestie purus venenatis nec. Ut venenatis lacinia tellus ut pretium. Proin cursus lectus vitae turpis sagittis, et tincidunt libero pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<footer>
+						<h1>Dit is een footer.</h1>
+					</footer>
+					
+				</article>
+
+				<aside>
+					<p>aside</p>
+					<ul>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+					</ul>	
+				</aside>
+				<aside>
+					<p>aside</p>
+					<ul>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+						<li>Hier staat een item uit mijn blogs</li>
+					</ul>	
+				</aside>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+ 
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-44440858-1', 'berendswennenhuis.nl');
+		  ga('send', 'pageview');
+
+		</script>
+    </body>
+</html>

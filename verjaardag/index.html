@@ -1,0 +1,39 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Berend's verjaardag</title>
+<style type="text/css">
+@import "style.css";
+
+#defaultCountdown { width: 240px; height: 45px; }
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript">
+
+$(function () {
+
+	var bDay = new Date(); 
+	bDay = new Date(bDay.getFullYear() + 1, 7 - 1, 13);
+
+	$('#countDown').countdown({until: bDay, compact: true, 
+	format: 'S', description: ''});
+});
+
+</script>
+</head>
+
+<body>
+
+
+<div id="typografie">
+</div>
+
+<div id="getal">
+	<span id="countDown"></span>
+</div>
+
+</body>
+</html>
